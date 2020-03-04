@@ -19,4 +19,4 @@ spec:
       - image: tiggysravanwebapp
         name: ecr
         ports:
-        - containerPort: 8081
+        - containerPort: 5000
