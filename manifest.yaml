@@ -16,7 +16,7 @@ spec:
         app: ecr
     spec:
       containers:
-      - image: tiggysravanwebapp
+      - image: testingecr/tiggysravanwebapp
         name: ecr
         ports:
         - containerPort: 5000
