@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecr
+  labels:
+    app: ecr
+spec:
+  selector:
+    matchLabels:
+      app: ecr
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: ecr
+    spec:
+      containers:
+      - image: tiggysravanwebapp
+        name: ecr
+        ports:
+        - containerPort: 8081
